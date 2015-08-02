@@ -1,0 +1,334 @@
+/* ----- GENERAL */
+
+.container {
+    border: 1px solid red;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: white;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+
+header h1 {
+    text-indent: -9999px;
+    width: 100%;
+    height: 88px;
+    background: url("../imgs/masquerade-logo-xs.gif") no-repeat center;
+}
+
+label {
+    text-transform: capitalize;
+    margin-bottom: 0; /* Removing bootstrap config */
+}
+
+/* All inputs has only the border bottom visible */
+input[type=text] {
+    border-color: transparent;
+    border-bottom: 1px solid #000;
+}
+
+section { margin-bottom: 30px; }
+
+.jumbotron {
+    background: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+/* ----- DOTS */
+
+.dotPoints input[type=radio] {
+    display: none;
+}
+
+.dotPoints label {
+    margin: 0;
+    border: 0;
+    max-width: 100%;
+}
+
+.dotPoints label:after {
+    content: '';
+    display: block;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+}
+
+.dotPoints {
+    text-align: center;
+}
+
+.checkedDot + label:after, .dotPoints input:disabled + label:after {
+    background: #000000;
+}
+
+/* ----- SECTION TITLE */
+
+.sectionTitle {
+    text-transform: capitalize;
+    text-align: center;
+    width:100%;
+    margin-bottom: 15px;
+    margin-left: 0px; /* Removing bootstrap config */
+    margin-right: 0px; /* Removing bootstrap config */
+    background: #cccccc;
+}
+
+.sectionTitle h2 {
+    margin: 0; /* Removing bootstrap config */
+    display: inline-block;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.groupTitle h3 {
+    margin-bottom: 15px;
+}
+
+/* ----- INFO */
+
+.info label {
+    margin-top: 15px;
+}
+
+.info input[type=text] {
+    width: 100%;
+}
+
+/* ----- ATTRIBUTES */
+
+.attributes li {
+    display: inline-block;
+}
+
+.attributesGroup {
+    margin-bottom: 15px;
+}
+
+/* ----- ABILITIES */
+
+.abilities li {
+    display: inline;
+}
+
+.abilities .abilitiesTitle {
+    border-bottom: 1px solid #000000;
+    padding: 0;
+}
+
+.abilities .dotPoints {
+    text-align: right;
+}
+
+.abilities .row:not(.sectionTitle) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+/* ----- ADVANTAGES */
+
+
+.advantages .row:not(.sectionTitle) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.advantages input[type=text] {
+    width: 100%;
+}
+
+.advantages .dotPoints {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.advantagesGroup {
+    margin-bottom: 15px;
+}
+
+/* ------ DESKTOP */
+
+@media (min-width: 768px) {
+    header h1 {
+        display: block;
+        margin: 0 auto;
+        text-indent: -9999px;
+        width: 500px;
+        height: 175px;
+        background-image: url("../imgs/masquerade-logo-md.gif");
+    }
+
+    .info label {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- OTHER TRAITS */
+
+.otherTraits li {
+    display: inline-block;
+}
+
+.otherTraits .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.otherTraits h6 {
+    font-size: 1.2em;
+    background: #dddddd;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.otherTraits .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.meritsInput {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.merits input[type=text] {
+    width: 100%;
+}
+
+.merits, .otherTraitsColumn {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ----- HEALTH */
+
+.health, .willpower {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.health input[type=checkbox], .willpower input[type=checkbox] {
+    display: inline-block;
+    margin: 0;
+}
+
+/* ----- OTHERS */
+
+.others {
+    margin-top: 15px;
+}
+
+.others label {
+    padding: 0;
+}
+
+.others input {
+    margin-right: 0;
+}
+
+/* ----- MORALITY */
+
+.morality label:after {
+    content: "";
+}
+
+.morality label {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.morality input[type=text] {
+    margin-right: 10px;
+}
+
+.moralityGreyInput {
+    border: 0;
+    background: #dddddd;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ----- EXPERIENCE */
+
+.experience {
+    margin-top: 36px;
+}
+
+.experience .row label {
+    padding: 0;
+}
+
+/* ----- WEAPONS, EQUIPMENT AND DICE MOD */
+
+.equipment {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.maximizeInputText input {
+    width: 100%;
+}
+
+/* ----- FOOTER */
+
+footer p {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-top: 3px solid #000000;
+}
